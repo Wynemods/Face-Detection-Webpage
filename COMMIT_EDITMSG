@@ -1,0 +1,1 @@
+Add face detection website with Flask, OpenCV, and frontend template; add .gitignore to exclude uploads, detected images, and virtual environment
