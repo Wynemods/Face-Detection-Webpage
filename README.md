@@ -1,68 +1,95 @@
-# Face Detection Website
+---
 
-This project is a simple face detection web application built with Python, Flask, and OpenCV. Users can upload images through a web interface, and the app detects faces in the images and highlights them with rectangles.
+# 🚧 **System Under Construction: Face Detection Web Application** 🚧
 
-## Features
+## Executive Summary
 
-- Upload images via a web form.
-- Detect faces using OpenCV's Haar Cascade classifier.
-- Display the processed image with detected faces highlighted.
-- Simple and clean user interface.
+The **Face Detection Website** is a prototype web-based application engineered with **Python**, **Flask**, and **OpenCV**, designed to perform automated **facial recognition and localization** within digital images. 🖼️🔍 Users are enabled to submit images via a structured web interface, upon which the system algorithmically detects facial regions and renders bounding rectangles around them.
 
-## Project Structure
+⚠️ **Notice:** This platform is presently in its **Minimum Viable Product (MVP) / developmental phase**. Functionalities are operational at a preliminary level; however, further refinement, scalability enhancements, and security reinforcements are ongoing. Stakeholders and contributors are invited to submit **recommendations, feedback, and upgrade proposals** to facilitate optimization of the system.
 
-- `app.py`: Main Flask application with face detection logic.
-- `templates/index.html`: HTML template for the frontend.
-- `requirements.txt`: Python dependencies.
-- `uploads/`: Directory where uploaded images are saved (not included in Git).
-- `static/detected/`: Directory where processed images with detected faces are saved (not included in Git).
-- `.gitignore`: Specifies files and folders to exclude from Git.
+---
 
-## Setup and Installation
+## 🔧 Core Features
 
-1. Clone the repository:
+* 📤 Image upload capability via a secure web form.
+* 🤖 Face detection powered by **OpenCV’s Haar Cascade classifier**.
+* 🖼️ Visualization of processed images with detected faces highlighted.
+* 🎨 Lightweight, minimalistic, and user-oriented interface.
+
+---
+
+## 📂 Project Architecture
+
+* **`app.py`** → Principal Flask application containing routing and detection logic.
+* **`templates/index.html`** → Frontend HTML template for the user interface.
+* **`requirements.txt`** → Dependency specification file (Python libraries).
+* **`uploads/`** → Temporary storage directory for raw user-submitted images *(excluded from Git)*.
+* **`static/detected/`** → Repository for algorithmically processed images *(excluded from Git)*.
+* **`.gitignore`** → Exclusion rules for version control hygiene.
+
+---
+
+## ⚙️ Installation & Configuration
+
+1. **Repository Cloning:**
 
    ```bash
    git clone <repository-url>
    cd <repository-directory>
    ```
 
-2. (Optional but recommended) Create and activate a Python virtual environment (Python 3.10 recommended):
+2. **Virtual Environment Setup (Recommended):**
 
    ```bash
    python -m venv face_detection_env
-   face_detection_env\Scripts\activate   # On Windows
-   source face_detection_env/bin/activate  # On macOS/Linux
+   face_detection_env\Scripts\activate     # Windows
+   source face_detection_env/bin/activate  # macOS/Linux
    ```
 
-3. Install the required dependencies:
+3. **Dependency Installation:**
 
    ```bash
    pip install -r requirements.txt
    ```
 
-## Running the Application
+---
 
-Run the Flask app with:
+## ▶️ Deployment & Execution
+
+Activate the Flask development server via:
 
 ```bash
 python app.py
 ```
 
-The app will start on `http://127.0.0.1:5000`. Open this URL in your browser to access the face detection website.
+Access the system at **[http://127.0.0.1:5000/](http://127.0.0.1:5000/)** using any modern browser.
 
-## Usage
+---
 
-- Upload an image file using the form on the homepage.
-- The app will process the image and display it with detected faces highlighted.
-- Supported image formats include common types like JPG, PNG, etc.
+## 📌 Usage Protocol
 
-## Notes
+* Navigate to the homepage and upload an image in supported formats (e.g., `.jpg`, `.png`).
+* The system will process the file, detect facial landmarks, and present the annotated image.
+* Uploaded and processed assets are retained locally in `uploads/` and `static/detected/`.
 
-- Uploaded and processed images are saved locally in the `uploads/` and `static/detected/` folders respectively.
-- These folders are excluded from version control via `.gitignore`.
-- This app is intended for development and testing purposes. For production deployment, consider using a production-ready WSGI server.
+---
 
-## License
+## ⚠️ Developmental Status
 
-This project is open source and available under the MIT License.
+This application remains **under active construction**:
+
+* 🔄 Expanded algorithmic models (beyond Haar Cascade) are being integrated.
+* 🔒 Security hardening and production-grade deployment pipelines are in progress.
+* 🛠️ Cross-platform scalability, real-time streaming detection, and API endpoints are under development.
+
+We **welcome ideas, improvements, and collaborative contributions** to advance this MVP into a **robust production-ready system**. 🚀
+
+---
+
+## 📜 Licensing
+
+This project is **open-source** and distributed under the **MIT License**.
+
+---
+
